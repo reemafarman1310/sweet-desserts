@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sweet Desserts — Home</title>
+  <meta name="description"
+    content="Sweet Desserts - Fresh Fruit Cocktail, Doodh Dulari, Labe Sheeren, Arabian Rabri, Cherry Crunch and more. Order for parties and events." />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="brand">Sweet Desserts</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" data-animate>
+    <div class="inner">
+      <h1>Welcome to Sweet Desserts</h1>
+      <p>Handmade sweets & desserts — Fruit Cocktail, Doodh Dulari, Labe Sheeren, Arabian Rabri and Cherry Crunch.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="container" data-animate>
+      <div class="section-title">Our Specialties</div>
+
+      <div class="cards">
+
+        <article class="card" data-animate>
+          <div class="card-media"><img src="./images/fruit-cocktail.jpg" alt="Fruit Cocktail"></div>
+          <div class="card-body">
+            <h3>Fruit Cocktail</h3>
+            <p>Fresh seasonal fruits mixed with creamy condensed milk — party trays available.</p>
+            <div class="price">Starting PKR 600</div>
+            <a class="btn" href="contact.html">Order Now</a>
+          </div>
+        </article>
+
+        <article class="card" data-animate>
+          <div class="card-media"><img src="./images/doodh-dulari.jpg" alt="Doodh Dulari"></div>
+          <div class="card-body">
+            <h3>Doodh Dulari</h3>
+            <p>Traditional milk-based dessert with colorful jellies and sweet taste.</p>
+            <div class="price">Starting PKR 450</div>
+            <a class="btn" href="contact.html">Order Now</a>
+          </div>
+        </article>
+
+        <article class="card" data-animate>
+          <div class="card-media"><img src="./images/labe-sheeren.jpg" alt="Labe Sheeren"></div>
+          <div class="card-body">
+            <h3>Labe Sheeren</h3>
+            <p>Rich and creamy — a royal choice for celebrations.</p>
+            <div class="price">Starting PKR 500</div>
+            <a class="btn" href="contact.html">Order Now</a>
+          </div>
+        </article>
+
+        <article class="card" data-animate>
+          <div class="card-media"><img src="./images/arabian-rabri.jpg" alt="Arabian Rabri"></div>
+          <div class="card-body">
+            <h3>Arabian Rabri</h3>
+            <p>Silky rabri with nuts and saffron — pure indulgence.</p>
+            <div class="price">Starting PKR 700</div>
+            <a class="btn" href="contact.html">Order Now</a>
+          </div>
+        </article>
+
+        <article class="card" data-animate>
+          <div class="card-media"><img src="./images/cherry-crunch.jpg" alt="Cherry Crunch"></div>
+          <div class="card-body">
+            <h3>Cherry Crunch</h3>
+            <p>Cherries, cream and crunchy topping — our signature dessert.</p>
+            <div class="price">Starting PKR 650</div>
+            <a class="btn" href="contact.html">Order Now</a>
+          </div>
+        </article>
+
+        <article class="card" data-animate>
+          <div class="card-media"><img src="./images/chocolate-mousse.jpg" alt="Chocolate Mousse"></div>
+          <div class="card-body">
+            <h3>Chocolate Mousse</h3>
+            <p>Light and airy chocolate mousse — delicious & elegant.</p>
+            <div class="price">Starting PKR 750</div>
+            <a class="btn" href="contact.html">Order Now</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2025 Sweet Desserts — Made with love
+  </footer>
+
+  <script>
+
+    const els = document.querySelectorAll('[data-animate]');
+    const onScroll = () => {
+      els.forEach(el => {
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight - 80) el.classList.add('visible');
+      });
+    };
+    window.addEventListener('scroll', onScroll);
+    window.addEventListener('load', onScroll);
+  </script>
+</body>
+
+</html>

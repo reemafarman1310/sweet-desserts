@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Sweet Desserts</title>
+  <meta name="description"
+    content="Contact Sweet Desserts to place orders or inquiries. Fill the order form or reach us by phone/email." />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">Sweet Desserts</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container" data-animate>
+      <div class="section-title">Contact & Order</div>
+      <p style="text-align:center">Fill this form to place an order or ask a question. For assignment keep action="#"
+      </p>
+
+      <div class="form-card" data-animate>
+        <form action="#" method="post" onsubmit="alert('Order submitted (assignment mode).'); return false;">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <input class="full" type="tel" name="phone" placeholder="Phone (optional)">
+            <textarea class="full" name="order" placeholder="Order details (e.g. 1 medium fruit cocktail)"
+              required></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn-primary" type="submit">Send Order</button>
+          </div>
+        </form>
+      </div>
+
+      <p style="text-align:center;margin-top:12px">Email: <a
+          href="asifkhansahab@gmail.com">asifkhansahab@gmail.com</a> • Phone: <a
+          href="tel:+923232623315">+92 323 2623315</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2025 Sweet Desserts</footer>
+
+  <script>
+    const els = document.querySelectorAll('[data-animate]');
+    const animate = () => els.forEach(el => {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight - 80) el.classList.add('visible');
+    });
+    window.addEventListener('scroll', animate);
+    window.addEventListener('load', animate);
+  </script>
+</body>
+
+</html>

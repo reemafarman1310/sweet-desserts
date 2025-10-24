@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Sweet Desserts</title>
+  <meta name="description"
+    content="About Sweet Desserts — family bakery making Fruit Cocktail, Doodh Dulari, Labe Sheeren, Arabian Rabri and Cherry Crunch." />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="brand">Sweet Desserts</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container" data-animate>
+      <div class="section-title">About Sweet Desserts</div>
+      <div class="row">
+        <div class="col">
+          <p style="font-size:1.05rem">
+            Sweet Desserts is a family-run bakery passionate about traditional and modern sweets.
+            We use fresh milk, fruits and traditional recipes to make desserts that bring smiles.
+          </p>
+          <p style="margin-top:12px">
+            Our specialties include <strong>Fruit Cocktail</strong>, <strong>Doodh Dulari</strong>, <strong>Labe
+              Sheeren</strong>, <strong>Arabian Rabri</strong>, and <strong>Cherry Crunch</strong>.
+            We prepare custom orders and party platters.
+          </p>
+        </div>
+
+        <div class="col">
+          <img src="./images/about-banner.jpg" alt="Bakers making desserts" class="resp-img">
+        </div>
+      </div>
+    </section>
+
+    <section class="container" data-animate>
+      <div class="section-title">Our Promise</div>
+      <p>Fresh ingredients — clean preparation — on-time delivery. We treat every order like a celebration.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2025 Sweet Desserts — Made with care
+  </footer>
+
+  <script>
+
+    const els2 = document.querySelectorAll('[data-animate]');
+    const onScroll2 = () => {
+      els2.forEach(el => {
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight - 80) el.classList.add('visible');
+      });
+    };
+    window.addEventListener('scroll', onScroll2);
+    window.addEventListener('load', onScroll2);
+  </script>
+</body>
+
+</html>
