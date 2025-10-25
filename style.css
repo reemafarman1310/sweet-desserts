@@ -72,7 +72,7 @@ body {
 .hero {
   min-height: 60vh;
   background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
-    url('./images/banner.jpg') center/cover no-repeat;
+    url('./banner.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -323,4 +323,5 @@ textarea {
   .card-media img {
     height: 150px
   }
+
 }
